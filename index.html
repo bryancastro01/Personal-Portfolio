@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080d16">
+    <meta
+      name="description"
+      content="John Bryan Castro — Information Technology student and aspiring full-stack web developer."
+    >
+    <title>John Bryan Castro | IT Student &amp; Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Bryan Castro, home">
+          <span class="brand-mark">BC</span>
+          <span>Bryan Castro<span class="brand-period">.</span></span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z"></path>
+            </svg>
+            <span class="theme-switch-knob" aria-hidden="true"></span>
+            <span class="sr-only theme-label">Dark mode</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> Open to opportunities</p>
+            <h1>Hello, Welcome to <span class="text-gradient">Bryan Castro's Portfolio!</span></h1>
+            <p class="hero-role">Information Technology Student <span class="role-divider">·</span> Aspiring Full-Stack Web Developer</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">
+                View my projects
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"></path></svg>
+              </a>
+              <a class="button button-secondary" href="#contact">Contact me</a>
+            </div>
+            <div class="hero-meta">
+              <span class="meta-line"></span>
+              <span>Based in the Philippines</span>
+              <span class="meta-separator">/</span>
+              <span>Currently learning &amp; building</span>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="avatar-orbit orbit-one"></div>
+            <div class="avatar-orbit orbit-two"></div>
+            <div class="avatar-frame">
+              <div class="avatar-placeholder" aria-hidden="true">
+                <span>BC</span>
+                <small>YOUR PHOTO<br>GOES HERE</small>
+              </div>
+              <!-- Add an optional avatar-eyes-closed.png to use a separate dark-mode portrait. -->
+              <img
+                id="profile-avatar"
+                src="assets/profile.jpg"
+                alt="Portrait of John Bryan Castro"
+              >
+            </div>
+            <div class="float-card float-card-code">
+              <span class="float-icon">&lt;/&gt;</span>
+              <span><strong>Build</strong><small>with purpose</small></span>
+            </div>
+            <div class="float-card float-card-db">
+              <span class="float-icon float-icon-db">↗</span>
+              <span><strong>Ideas</strong><small>into solutions</small></span>
+            </div>
+            <span class="visual-spark spark-one">✳</span>
+            <span class="visual-spark spark-two">✦</span>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about"><span></span>Scroll to explore</a>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">A little about me</p>
+            <h2>Curious by nature.<br><span class="text-gradient">Driven to build.</span></h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>
+                I’m Bryan Castro, a 4th year Information Technology student who enjoys
+                turning ideas into useful, easy-to-use applications. I’m especially
+                interested in web development and computer hardware, and I’m always
+                looking for ways to learn new skills and improve my craft.
+              </p>
+              <p>
+                I like learning by building, collaborating on practical projects, and
+                improving each detail along the way. My goal is to create solutions
+                that are not only functional but also intuitive and enjoyable for
+                the people who use them.
+              </p>
+              <a class="text-link" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+            </div>
+            <article class="education-card">
+              <div class="education-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m3 9 9-5 9 5-9 5-9-5Zm4 3v5c3.2 2.7 6.8 2.7 10 0v-5m5-3v6"></path></svg>
+              </div>
+              <div class="education-info">
+                <p class="card-kicker">Education timeline</p>
+                <ol class="education-timeline">
+                  <li>
+                    <div class="education-timeline-heading">
+                      <h3>College (Current)</h3>
+                      <span>2023 – Present</span>
+                    </div>
+                    <p class="education-program">Bachelor of Science in Information Technology</p>
+                    <p class="education-school">College of Information Technology and Engineering</p>
+                    <p class="education-school">La Consolacion University of the Philippines (LCUP)</p>
+                  </li>
+                  <li>
+                    <div class="education-timeline-heading">
+                      <h3>Senior High School (CSS Major)</h3>
+                      <span>2021 – 2023</span>
+                    </div>
+                    <p class="education-school">Marcelo H. Del Pilar National High School</p>
+                  </li>
+                  <li>
+                    <div class="education-timeline-heading">
+                      <h3>Junior High School</h3>
+                      <span>2017 – 2021</span>
+                    </div>
+                    <p class="education-school">Marcelo H. Del Pilar National High School</p>
+                  </li>
+                  <li>
+                    <div class="education-timeline-heading">
+                      <h3>Elementary</h3>
+                      <span>2010 – 2017</span>
+                    </div>
+                    <p class="education-school">Santor Elementary School</p>
+                  </li>
+                </ol>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="container">
+          <div class="section-heading section-heading-centered">
+            <p class="eyebrow">What I work with</p>
+            <h2>Skills &amp; <span class="text-gradient">tools.</span></h2>
+            <p class="section-intro">The technologies I use to bring ideas from concept to reality.</p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <div class="skill-card-top"><span class="skill-icon icon-front">01</span><span class="skill-count">03 technologies</span></div>
+              <h3>Frontend</h3>
+              <p>Building clear, responsive interfaces for the web.</p>
+              <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-card-top"><span class="skill-icon icon-back">02</span><span class="skill-count">04 technologies</span></div>
+              <h3>Backend &amp; databases</h3>
+              <p>Creating data-driven features and application logic.</p>
+              <div class="skill-tags"><span>Python</span><span>Supabase</span><span>XAMPP</span><span>PHP / MySQL</span></div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-card-top"><span class="skill-icon icon-tools">03</span><span class="skill-count">02 tools</span></div>
+              <h3>Tools &amp; workflow</h3>
+              <p>Staying organized and collaborating throughout development.</p>
+              <div class="skill-tags"><span>Git</span><span>Visual Studio Code</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="container">
+          <div class="section-heading projects-heading">
+            <div>
+              <p class="eyebrow">Selected work</p>
+              <h2>Projects with <span class="text-gradient">purpose.</span></h2>
+            </div>
+            <p class="section-intro">A few practical applications made to help people get things done.</p>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-art art-venue" aria-label="Decorative placeholder project screenshot" role="img">
+                <div class="mock-window"><div class="mock-bar"><i></i><i></i><i></i><b>LCUP Venue Scheduler</b></div><div class="mock-content"><div class="mock-sidebar"></div><div class="mock-board"><span></span><span></span><span></span><span></span><span></span><span></span></div></div></div>
+                <span class="art-label">PROJECT 01</span>
+              </div>
+              <div class="project-content">
+                <div class="project-number">01 <span>— INSTITUTIONAL SYSTEM</span></div>
+                <h3>Web-Based Institutional Venue Scheduling System for LCUP</h3>
+                <p>A role-based scheduling and venue management web system built for La Consolacion University of the Philippines.</p>
+                <div class="project-tags"><span>Web App</span><span>Database</span><span>Scheduling</span></div>
+                <div class="project-links"><a href="https://github.com/bryancastro01" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="#contact" aria-label="Ask about a live demo for the venue scheduling system">Live demo <span aria-hidden="true">↗</span></a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art art-study" aria-label="Decorative placeholder project screenshot" role="img">
+                <div class="study-note"><span class="note-spark">✳</span><small>YOUR DAILY REVIEW</small><strong>Little by little,<br>you learn a lot.</strong><i>Keep going — you’ve got this!</i></div>
+                <span class="art-label">PROJECT 02</span>
+              </div>
+              <div class="project-content">
+                <div class="project-number">02 <span>— LEARNING TOOL</span></div>
+                <h3>Smart Study Buddy (Reviewer App)</h3>
+                <p>An interactive digital reviewer and study companion to help students organize and review study materials efficiently.</p>
+                <div class="project-tags"><span>Education</span><span>Interactive</span><span>Study Tool</span></div>
+                <div class="project-links"><a href="https://github.com/bryancastro01" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="#contact" aria-label="Ask about a live demo for Smart Study Buddy">Live demo <span aria-hidden="true">↗</span></a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art art-pharmacy" aria-label="Decorative placeholder project screenshot" role="img">
+                <div class="pharmacy-card"><span class="pharm-cross">+</span><small>PHARMACY POS</small><strong>Today’s overview</strong><div class="pharm-stats"><span>Sales<br><b>••••</b></span><span>In stock<br><b>••• items</b></span></div><div class="pharm-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+                <span class="art-label">PROJECT 03</span>
+              </div>
+              <div class="project-content">
+                <div class="project-number">03 <span>— SALES &amp; INVENTORY</span></div>
+                <h3>Pharmacy POS</h3>
+                <p>A point-of-sale and inventory management system tailored for tracking pharmaceutical sales and stock.</p>
+                <div class="project-tags"><span>Point of Sale</span><span>Inventory</span><span>Database</span></div>
+                <div class="project-links"><a href="https://github.com/bryancastro01" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="#contact" aria-label="Ask about a live demo for Pharmacy POS">Live demo <span aria-hidden="true">↗</span></a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art art-coffee" aria-label="Decorative placeholder project screenshot" role="img">
+                <div class="coffee-app"><div class="coffee-top"><small>GOOD MORNING</small><strong>Find your<br>coffee moment.</strong><span>☕</span></div><div class="coffee-menu"><small>POPULAR TODAY</small><div><i></i><span>Caramel latte<br><b>₱ 145</b></span><button type="button" tabindex="-1" aria-hidden="true">+</button></div><div><i></i><span>Cold brew<br><b>₱ 125</b></span><button type="button" tabindex="-1" aria-hidden="true">+</button></div></div></div>
+                <span class="art-label">PROJECT 04</span>
+              </div>
+              <div class="project-content">
+                <div class="project-number">04 <span>— ORDER MANAGEMENT</span></div>
+                <h3>Coffee Shop Ordering System</h3>
+                <p>A streamlined order processing and menu management system for smooth coffee shop operations.</p>
+                <div class="project-tags"><span>Ordering</span><span>Menu</span><span>Web App</span></div>
+                <div class="project-links"><a href="https://github.com/bryancastro01" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="#contact" aria-label="Ask about a live demo for the Coffee Shop Ordering System">Live demo <span aria-hidden="true">↗</span></a></div>
+              </div>
+            </article>
+          </div>
+          <p class="project-note">Project visuals are CSS-made placeholders. Replace them with real screenshots whenever you’re ready.</p>
+        </div>
+      </section>
+
+      <section class="section certifications-section" id="certifications">
+        <div class="container">
+          <div class="section-heading section-heading-centered">
+            <p class="eyebrow">Learning in action</p>
+            <h2>Achievements &amp; <span class="text-gradient">certifications.</span></h2>
+            <p class="section-intro">A few milestones that reflect my commitment to keep learning.</p>
+          </div>
+          <div class="cert-grid">
+            <article class="cert-card">
+              <div class="certificate-placeholder has-certificate-image">
+                <img class="certificate-image" src="assets/access-expert.png" alt="Microsoft Office Specialist Access 2019 Expert certificate">
+              </div>
+              <div class="cert-details"><span class="cert-category">MICROSOFT OFFICE SPECIALIST</span><h3>Access 2019 Expert Certification</h3><span class="cert-arrow" aria-hidden="true">↗</span></div>
+            </article>
+            <article class="cert-card">
+              <div class="certificate-placeholder cert-testdome has-certificate-image">
+                <img class="certificate-image" src="assets/testdome-html-css.png" alt="TestDome HTML/CSS certificate">
+              </div>
+              <div class="cert-details"><span class="cert-category">TESTDOME CERTIFICATE</span><h3>HTML/CSS</h3><span class="cert-arrow" aria-hidden="true">↗</span></div>
+            </article>
+            <article class="cert-card">
+              <div class="certificate-placeholder cert-security has-certificate-image">
+                <img class="certificate-image" src="assets/enterprise-security.png" alt="Fundamentals of Enterprise Security certificate">
+              </div>
+              <div class="cert-details"><span class="cert-category">TESTDOME CERTIFICATE</span><h3>Fundamentals of Enterprise Security</h3><span class="cert-arrow" aria-hidden="true">↗</span></div>
+            </article>
+          </div>
+          <p class="project-note">Certificate cards are placeholders. Add your image files to <code>assets/</code> and update the cards in <code>index.html</code>.</p>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="contact-panel">
+            <div class="contact-copy">
+              <p class="eyebrow">Have a project in mind?</p>
+              <h2>Let’s make something <span class="text-gradient">useful.</span></h2>
+              <p>I’m always happy to connect, talk through an idea, or hear about an opportunity. Drop me a message.</p>
+              <a class="button button-primary contact-cta" href="mailto:johnbryancastro12@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">@</span>
+                <span><small>Email me</small><a href="mailto:johnbryancastro12@gmail.com">johnbryancastro12@gmail.com</a></span>
+                <button class="copy-button" type="button" data-copy="johnbryancastro12@gmail.com" aria-label="Copy email address" title="Copy email">Copy</button>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">↗</span>
+                <span><small>Give me a call</small><a href="tel:+639297990129">09297990129</a></span>
+                <button class="copy-button" type="button" data-copy="09297990129" aria-label="Copy phone number" title="Copy phone number">Copy</button>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon contact-github" aria-hidden="true">GH</span>
+                <span><small>Find me on GitHub</small><a href="https://github.com/bryancastro01" target="_blank" rel="noopener noreferrer">github.com/bryancastro01</a></span>
+                <a class="external-link" href="https://github.com/bryancastro01" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">↗</a>
+              </div>
+              <p class="copy-status" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand footer-brand" href="#home"><span class="brand-mark">BC</span><span>Bryan Castro<span class="brand-period">.</span></span></a>
+        <p>Designed &amp; built with care by Bryan Castro.</p>
+        <a class="back-to-top" href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
